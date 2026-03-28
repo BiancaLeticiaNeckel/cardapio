@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/cardapio")
 public class ItemCardapioController {
@@ -31,6 +32,7 @@ public class ItemCardapioController {
         item.setId(id);
         return repository.save(item);
     }
+
 
     @DeleteMapping("/{id}")
     public void deletar(@PathVariable Long id){
