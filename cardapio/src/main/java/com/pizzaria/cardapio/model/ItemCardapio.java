@@ -9,9 +9,9 @@ public class ItemCardapio {
 @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-private String nome;
-private Double preco;
+    private String nome;
+    private Double preco;
 
-@Column(length = 500)
+    @Column(length = 500)
     private String descricao;
 }
